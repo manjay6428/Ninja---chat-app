@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/home_style.css">
+    <script src="https://kit.fontawesome.com/6f0f83005a.js" crossorigin="anonymous"></script>
+    <title>Ninja Chat</title>
+</head>
+<body>
+    <div id="header">
+        <h1 id="logo"><span>Ninja</span>chat</h1>
+    </div>
+    <div id="root-div">
+        <div id="left-div">
+            <div id="large-message">
+                Online video meetings to hang on.Now for everyone.
+            </div>
+
+            <div id="small-message">
+                An online platform to meet up your family,friends,and discuss work<br/>
+                Ninja Chat, available for you to make it free and available for all.
+            </div>
+
+            
+        </div>
+
+        <div id="right-div">
+            <!-- <img src="https://appdevs.net/envato/chattenger/4.png " height="330px"> -->
+            <div id="new-meeting-root">
+                <div id="start-meeting">
+                    <a href="/room">&emsp;&nbsp;
+                    New Meeting</a>
+                </div>
+
+                <div id="enter-meeting-link">
+                    
+                    <input type="text" name="link" placeholder="Join by meeting link" id="meeting-link-text-box">
+                </div>
+                <div id="join-button"><i class="fa fa-user-plus" aria-hidden="true"></i>Join</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('join-button').addEventListener('click', function() {
+        let input = document.getElementById('meeting-link-text-box').value;
+        window.location.assign(input);
+        document.getElementById('meeting-link-text-box').value = "";
+    });
+</script>

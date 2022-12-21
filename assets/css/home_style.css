@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+#header {
+    margin-left: 15px;
+}
+*{
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    --skin-color:#ec1839;
+    
+}
+#logo span{
+    font-family: 'Clicker, script',cursive;
+    color: var(--skin-color);
+}
+body{
+    background-image: url('https://anyvoo.com/wp-content/uploads/2020/05/Backdrops-for-live-video-e1619810582472.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+   
+}
+
+#root-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-div {
+    width: 50vw;
+}
+
+#large-message {
+    margin-top: 45vh;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+#small-message {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-left: 6.5rem;
+    color: rgb(62, 54, 54);
+}
+
+#start-meeting a {
+    text-decoration: none;
+    color: white;
+}
+
+#new-meeting-root {
+    margin-top: 200px;
+}
+
+#enter-meeting-link {
+    border: 1px solid grey;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+    color: gray;
+    height: 2rem;
+    padding: .5rem;
+    line-height: 2rem;
+}
+
+#enter-meeting-link input {
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+#join-button {
+    position: absolute;
+    font-family: sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 4rem;
+    margin-left: 100px;
+    border-radius: .2rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+#join-button:hover {
+    cursor: pointer;
+    background-color: hsla(214, 93%, 47%, .1);
+}
+
+#enter-meeting-link input:focus {
+    outline: none;
+}
+
+#start-meeting {
+    width: 300px;
+    height: 2.1rem;
+    padding-top: 1rem;
+    border-radius: .2rem;
+    color: white;
+    background-color: #000;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#start-meeting:hover {
+    
+    transition: background-color .5s ease-in-out;
+}
+
+#right-div {
+    width: 40vw;
+}
+
+#right-div img {
+    width: 40vw;
+    margin-top: 20vh;
+    margin-left: -5rem;
+}
+#meeting-link-text-box{
+    width: 286px;
+}
+
+@media(max-width:842px){
+    #new-meeting-root {
+        margin-top: 400px;
+    }
+    
+}
+@media(max-width:600px){
+    #large-message {
+        margin-top: 10vh;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        margin-left: 2rem;
+        /* text-align: center; */
+    }
+    #left-div {
+        width: 100%;
+    }
+    #new-meeting-root {
+        margin-top: 280px;
+    }
+    #start-meeting {
+        width: 140px;
+    }
+    #meeting-link-text-box{
+        width: 130px;
+    }
+    #join-button {
+        margin-left: 50px;
+    }
+    
+}

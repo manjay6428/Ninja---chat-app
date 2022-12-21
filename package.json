@@ -1,0 +1,21 @@
+{
+  "name": "Ninja Chat",
+  "version": "1.0.0",
+  "description": "A Chat Conferencing App ",
+  "main": "index.js",
+  "scripts": {
+   
+    "start": "nodemon index.js"  
+  },
+  "author": "Ninja Chat",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "heroku": "^7.65.0",
+    "nodemon": "^2.0.14",
+    "peer": "^0.6.1",
+    "socket.io": "^4.2.0",
+    "uuid": "^8.3.2"
+  }
+}
